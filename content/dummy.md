@@ -20,7 +20,7 @@ You can have lists:
 You can put videos in the _files_ folder and embed them:
 
  <video width="600" controls>
-  <source src="/democracy-sector/files/what_is_a_democratic_lottery.mp4" type="video/mp4">
+  <source src="../files/what_is_a_democratic_lottery.mp4" type="video/mp4">
 </video>
 
 and so on...
