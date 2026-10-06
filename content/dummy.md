@@ -13,15 +13,14 @@ Write in <a href = "https://docs.github.com/en/get-started/writing-on-github/get
 ### Header 3
 
 You can have lists:
- * item 1
- * item 2
 
-You can put videos in the *files* folder and embed them:
+* item 1
+* item 2
+
+You can put videos in the _files_ folder and embed them:
 
  <video width="600" controls>
-  <source src="/files/what_is_a_democratic_lottery.mp4" type="video/mp4">
+  <source src="../files/what_is_a_democratic_lottery.mp4" type="video/mp4">
 </video>
 
 and so on...
-
-

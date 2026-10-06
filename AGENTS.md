@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is the documentation site for **OpenDLP** (Open Democratic Lottery Platform), an open-source tool for running Citizens' Assemblies and democratic lotteries, built by the Sortition Foundation.
+This is the site for the UK Democracy Sector, holding standards and related pages for the UK Democracy Sector, built by the Sortition Foundation.
 
 The site is built with [Hugo](https://gohugo.io/) and uses a custom theme styled after the GOV.UK Design System with Sortition Foundation branding.
 

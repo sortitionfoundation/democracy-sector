@@ -1,15 +1,15 @@
-# ABOUTME: Deployment guide for the OpenDLP documentation site
+# ABOUTME: Deployment guide for the UK Democracy Sector site
 
 # ABOUTME: Covers static site deployment, CMS authentication setup, and content editing workflow
 
-# Deploying the OpenDLP Documentation Site
+# Deploying the UK Democracy Sector Site
 
 This guide covers deploying the Hugo documentation site and setting up
 Sveltia CMS for browser-based content editing.
 
 ## Prerequisites
 
-- A GitHub account with access to the `sortitionfoundation/opendlp-docs` repository
+- A GitHub account with access to the `sortitionfoundation/democracy-sector` repository
 - Hugo installed locally (v0.100.0 or later) if you want to preview before pushing
 
 ## Deployment via GitHub Pages
@@ -69,7 +69,7 @@ the site is automatically rebuilt and deployed via GitHub Actions.
 
 When running the site locally with `just serve`, visit `http://localhost:1313/admin/`
 and click "Work with Local Repository". The browser will prompt you to select the
-root directory of the `opendlp-docs` repo. Changes are written directly to your local
+root directory of the `democracy-sector` repo. Changes are written directly to your local
 files — no GitHub auth required. This is useful for drafting content before pushing.
 
 ### Quick start: token-based sign-in
@@ -109,7 +109,7 @@ typical documentation editing usage.
 1. Go to https://github.com/organizations/sortitionfoundation/settings/applications/new
    (or your GitHub org's settings)
 2. Fill in:
-   - **Application name:** `OpenDLP Docs CMS` (or similar)
+   - **Application name:** `UK Democracy Sector CMS` (or similar)
    - **Homepage URL:** Your docs site URL
    - **Authorization callback URL:** `https://sveltia-cms-auth.<SUBDOMAIN>.workers.dev/callback`
 3. Click "Register application"
@@ -135,7 +135,7 @@ In `docs-site/static/admin/config.yml`, uncomment and update the `base_url`:
 ```yaml
 backend:
   name: github
-  repo: sortitionfoundation/opendlp-docs
+  repo: sortitionfoundation/democracy-sector
   branch: main
   base_url: https://sveltia-cms-auth.<SUBDOMAIN>.workers.dev
 ```
@@ -154,7 +154,7 @@ Rebuild and redeploy the site.
 Editors need:
 
 - A GitHub account
-- Write access to the `sortitionfoundation/opendlp-docs` repository
+- Write access to the `sortitionfoundation/democracy-sector` repository
 
 The CMS commits changes using the editor's GitHub identity, so all edits
 are attributed to the person who made them.

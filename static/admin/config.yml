@@ -1,7 +1,6 @@
-# ABOUTME: Sveltia CMS configuration for editing OpenDLP documentation content
+# ABOUTME: Sveltia CMS configuration for editing UK Democracy Sector content
 # ABOUTME: Defines the GitHub backend, media storage, and content collections
 ---
-
 backend:
   name: github
   repo: sortitionfoundation/democracy-sector
@@ -9,7 +8,7 @@ backend:
   # Set base_url to your Sveltia CMS Authenticator URL for OAuth login.
   # Without this, editors can still sign in using a GitHub personal
   # access token.
-  #base_url: https://sveltia-cms-auth.hamish-10d.workers.dev
+  base_url: https://sveltia-cms-auth-democracy-sector.hamish-10d.workers.dev/
 
 media_folder: static/files
 public_folder: /files
@@ -59,4 +58,3 @@ collections:
         - label: Body
           name: body
           widget: markdown
-

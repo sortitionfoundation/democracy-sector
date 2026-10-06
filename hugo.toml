@@ -3,7 +3,7 @@
 
 baseURL = '/'
 languageCode = 'en-gb'
-title = 'OpenDLP Documentation'
+title = 'UK Democracy Sector'
 theme = 'govuk-sortition'
 
 [params]
