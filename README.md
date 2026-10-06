@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-This is the documentation site for **OpenDLP** (Open Democratic Lottery Platform), an open-source tool for running Citizens' Assemblies and democratic lotteries, built by the [Sortition Foundation](https://www.sortitionfoundation.org).
+This is a static site built to house documents for the **UK Democracy Sector**. It is based on the [documentation site for OpenDLP](https://github.com/sortitionfoundation/opendlp-docs). More complete documentation can be found there.
 
 The site is built with [Hugo](https://gohugo.io/) and uses a custom theme styled after the [GOV.UK Design System](https://design-system.service.gov.uk/) with Sortition Foundation branding.
 
 ## OpenDLP Docs
 
-The site is live at <https://docs.sortitionlab.org>
+When fully configured the site will be live at <https://sortitionfoundation.github.io/democracy-sector>
 
-The source code can be found at <https://github.com/sortitionfoundation/opendlp-docs>
+The source code can be found at <https://github.com/sortitionfoundation/democracy-sector>
 
 Whenever you edit the site there are GitHub Actions that will rebuild the site and publish it.
 
@@ -18,7 +18,7 @@ Whenever you edit the site there are GitHub Actions that will rebuild the site a
 
 ### Quick version
 
-Go to `/admin/` on the live site - [direct link](https://docs.sortitionlab.org/admin/) click the "sign in with github" link. Once you've done that, you can edit in the browser and click "save". Around 30 seconds later your edit will be live on the site.
+Go to `/admin/` on the live site - [direct link](fill this in) and click the "sign in with github" link. Once you've done that, you can edit in the browser and click "save". Around 30 seconds later your edit will be live on the site.
 
 ### Longer version
 
@@ -29,7 +29,7 @@ Prerequisites:
 
 Editing
 
-- Go to `/admin/` on the live site - [direct link](https://docs.sortitionlab.org/admin/) click the "sign in with github" link.
+- Go to `/admin/` on the live site - [direct link](fill this in) click the "sign in with github" link.
 - Edit in the browser and click "save".
 - Around 30 seconds later your edit will be live on the site.
 
