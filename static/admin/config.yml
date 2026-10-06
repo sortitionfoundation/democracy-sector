@@ -1,4 +1,4 @@
-# ABOUTME: Sveltia CMS configuration for editing OpenDLP documentation content
+# ABOUTME: Sveltia CMS configuration for editing UK Democracy Sector content
 # ABOUTME: Defines the GitHub backend, media storage, and content collections
 ---
 backend:

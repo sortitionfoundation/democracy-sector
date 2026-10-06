@@ -1,4 +1,4 @@
-# OpenDLP Docs
+# UK Democracy Sector Site
 
 ## Project Overview
 
@@ -6,7 +6,7 @@ This is a static site built to house documents for the **UK Democracy Sector**. 
 
 The site is built with [Hugo](https://gohugo.io/) and uses a custom theme styled after the [GOV.UK Design System](https://design-system.service.gov.uk/) with Sortition Foundation branding.
 
-## OpenDLP Docs
+## UK Democracy Sector
 
 When fully configured the site will be live at <https://sortitionfoundation.github.io/democracy-sector>
 
@@ -25,7 +25,7 @@ Go to `/admin/` on the live site - [direct link](fill this in) and click the "si
 Prerequisites:
 
 - You need an account on https://github.com/ - if you don't have one, [create an account here](https://github.com/signup).
-- One of the technical team needs to allow you to edit this git repo. For the technical team, you can [manage access here](https://github.com/sortitionfoundation/opendlp-docs/settings/access).
+- One of the technical team needs to allow you to edit this git repo. For the technical team, you can [manage access here](https://github.com/sortitionfoundation/democracy-sector/settings/access).
 
 Editing
 

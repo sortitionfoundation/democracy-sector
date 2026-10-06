@@ -1,4 +1,4 @@
-/* ABOUTME: Custom styles for the OpenDLP docs site using Sortition Foundation branding */
+/* ABOUTME: Custom styles for the UK Democracy Sector site using Sortition Foundation branding */
 /* ABOUTME: Overrides GOV.UK Frontend defaults with Sortition colour palette */
 
 :root {
@@ -63,7 +63,7 @@ body {
 .govuk-header__link:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-underline-offset: .1em;
+  text-underline-offset: 0.1em;
   color: var(--sortition-burnt-orange);
 }
 
@@ -149,7 +149,8 @@ a:focus,
 }
 
 /* Prevent horizontal overflow on mobile */
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -652,13 +653,11 @@ html, body {
   }
 }
 
-
-
-
 /* Sticky layout for desktop content pages */
 @media (min-width: 48.0625em) {
   /* position: sticky can be broken by overflow-x: hidden on parent elements */
-  html, body {
+  html,
+  body {
     overflow-x: visible;
   }
 
