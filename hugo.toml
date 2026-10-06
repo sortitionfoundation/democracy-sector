@@ -1,0 +1,36 @@
+# ABOUTME: Hugo configuration for the UK Democracy Sector documentation site
+# ABOUTME: Uses a custom GOV.UK-styled theme with Sortition Foundation branding
+
+baseURL = '/'
+languageCode = 'en-gb'
+title = 'OpenDLP Documentation'
+theme = 'govuk-sortition'
+
+[params]
+description = 'Documentation for the UK Democracy Sector'
+supportEmail = 'info@sortitionfoundation.org'
+githubURL = 'https://github.com/sortitionfoundation/democracy-sector'
+sortitionFoundationURL = 'https://www.sortitionfoundation.org'
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+[[menu.main]]
+name = 'Help'
+url = '/help/'
+weight = 2
+[[menu.main]]
+name = 'CSV Format'
+url = '/csv-format/'
+weight = 3
+[[menu.main]]
+name = 'Data Agreement'
+url = '/data-agreement/'
+weight = 4
