@@ -18,7 +18,7 @@ Whenever you edit the site there are GitHub Actions that will rebuild the site a
 
 ### Quick version
 
-Go to `/admin/` on the live site - [direct link](fill this in) and click the "sign in with github" link. Once you've done that, you can edit in the browser and click "save". Around 30 seconds later your edit will be live on the site.
+Go to `/admin/` on the live site - [direct link](https://sortitionfoundation.github.io/democracy-sector/admin/) and click the "sign in with github" link. Once you've done that, you can edit in the browser and click "save". Around 30 seconds later your edit will be live on the site.
 
 ### Longer version
 
@@ -29,7 +29,7 @@ Prerequisites:
 
 Editing
 
-- Go to `/admin/` on the live site - [direct link](fill this in) click the "sign in with github" link.
+- Go to `/admin/` on the live site - [direct link](https://sortitionfoundation.github.io/democracy-sector/admin/) click the "sign in with github" link.
 - Edit in the browser and click "save".
 - Around 30 seconds later your edit will be live on the site.
 
