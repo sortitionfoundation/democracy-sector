@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ABOUTME: Placeholder logo for the UK Democracy Sector site -->
-<!-- ABOUTME: A simple ballot-box mark beside the words "Democracy Sector" in the site teal -->
+<!-- ABOUTME: Placeholder logo for the UK Deliberative Democracy Sector site -->
+<!-- ABOUTME: A circle-of-people deliberation mark beside the words "UK Deliberative Democracy Sector" in the site teal -->
 <svg xmlns="http://www.w3.org/2000/svg" width="330" height="64" viewBox="0 0 330 64" role="img" aria-labelledby="title">
-  <title id="title">UK Democracy Sector</title>
-  <!-- Ballot box mark -->
+  <title id="title">UK Deliberative Democracy Sector</title>
+  <!-- Deliberation mark: people seated in a circle around a table -->
   <rect x="2" y="2" width="60" height="60" rx="6" fill="#00746b"/>
-  <rect x="24" y="10" width="16" height="22" rx="1" fill="#ffffff" transform="rotate(-12 32 21)"/>
-  <rect x="12" y="28" width="40" height="26" rx="2" fill="#ffffff"/>
-  <rect x="22" y="33" width="20" height="3" rx="1.5" fill="#00746b"/>
+  <circle cx="32" cy="32" r="8" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="32.0" cy="13.0" r="5.5" fill="#ffffff"/>
+  <circle cx="48.5" cy="22.5" r="5.5" fill="#ffffff"/>
+  <circle cx="48.5" cy="41.5" r="5.5" fill="#ffffff"/>
+  <circle cx="32.0" cy="51.0" r="5.5" fill="#ffffff"/>
+  <circle cx="15.5" cy="41.5" r="5.5" fill="#ffffff"/>
+  <circle cx="15.5" cy="22.5" r="5.5" fill="#ffffff"/>
   <!-- Wordmark -->
-  <text x="76" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#473d3d">UK</text>
+  <text x="76" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#473d3d">UK DELIBERATIVE</text>
   <text x="75" y="54" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b0c0c">Democracy <tspan fill="#00746b">Sector</tspan></text>
 </svg>

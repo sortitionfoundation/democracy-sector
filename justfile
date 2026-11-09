@@ -1,4 +1,4 @@
-# ABOUTME: Build and development commands for the UK Democracy Sector site
+# ABOUTME: Build and development commands for the UK Deliberative Democracy Sector site
 # ABOUTME: Provides targets for building, serving locally, and cleaning the Hugo site
 
 # Build the static site into public/ and generate search index

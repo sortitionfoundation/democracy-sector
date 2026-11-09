@@ -1,12 +1,12 @@
-# UK Democracy Sector Site
+# UK Deliberative Democracy Sector Site
 
 ## Project Overview
 
-This is a static site built to house documents for the **UK Democracy Sector**. It is based on the [documentation site for OpenDLP](https://github.com/sortitionfoundation/opendlp-docs). More complete documentation can be found there.
+This is a static site built to house documents for the **UK Deliberative Democracy Sector**. It is based on the [documentation site for OpenDLP](https://github.com/sortitionfoundation/opendlp-docs). More complete documentation can be found there.
 
 The site is built with [Hugo](https://gohugo.io/) and uses a custom theme styled after the [GOV.UK Design System](https://design-system.service.gov.uk/) with Sortition Foundation branding.
 
-## UK Democracy Sector
+## UK Deliberative Democracy Sector
 
 When fully configured the site will be live at <https://sortitionfoundation.github.io/democracy-sector>
 

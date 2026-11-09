@@ -1,13 +1,13 @@
-# ABOUTME: Hugo configuration for the UK Democracy Sector documentation site
+# ABOUTME: Hugo configuration for the UK Deliberative Democracy Sector documentation site
 # ABOUTME: Uses a custom GOV.UK-styled theme with Sortition Foundation branding
 
 baseURL = '/'
 languageCode = 'en-gb'
-title = 'UK Democracy Sector'
+title = 'UK Deliberative Democracy Sector'
 theme = 'govuk-sortition'
 
 [params]
-description = 'Documentation for the UK Democracy Sector'
+description = 'Documentation for the UK Deliberative Democracy Sector'
 supportEmail = 'info@sortitionfoundation.org'
 githubURL = 'https://github.com/sortitionfoundation/democracy-sector'
 sortitionFoundationURL = 'https://www.sortitionfoundation.org'

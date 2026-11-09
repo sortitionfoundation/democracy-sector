@@ -1,8 +1,8 @@
-# ABOUTME: Deployment guide for the UK Democracy Sector site
+# ABOUTME: Deployment guide for the UK Deliberative Democracy Sector site
 
 # ABOUTME: Covers static site deployment, CMS authentication setup, and content editing workflow
 
-# Deploying the UK Democracy Sector Site
+# Deploying the UK Deliberative Democracy Sector Site
 
 This guide covers deploying the Hugo documentation site and setting up
 Sveltia CMS for browser-based content editing.
@@ -109,7 +109,7 @@ typical documentation editing usage.
 1. Go to https://github.com/organizations/sortitionfoundation/settings/applications/new
    (or your GitHub org's settings)
 2. Fill in:
-   - **Application name:** `UK Democracy Sector CMS` (or similar)
+   - **Application name:** `UK Deliberative Democracy Sector CMS` (or similar)
    - **Homepage URL:** Your docs site URL
    - **Authorization callback URL:** `https://sveltia-cms-auth.<SUBDOMAIN>.workers.dev/callback`
 3. Click "Register application"
