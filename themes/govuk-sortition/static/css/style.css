@@ -10,9 +10,9 @@
   --sortition-blood-red: #910d3f;
   --sortition-scarlet-red: #c7003a;
   --sortition-red: #ff0026;
-  --sortition-burnt-orange: #fe5734;
+  --brand-teal: #00746b;
   --sortition-buttermilk: #ffe2ae;
-  --sortition-saffron-yellow: #fda135;
+  --focus-yellow: #ffdd00;
   --sortition-sap-green: #70a311;
   --sortition-woad-blue: #548eb4;
 }
@@ -35,6 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom-color: var(--brand-teal);
 }
 
 .govuk-header__logo {
@@ -64,7 +65,7 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 0.1em;
-  color: var(--sortition-burnt-orange);
+  color: var(--brand-teal);
 }
 
 .header-logo-link {
@@ -106,14 +107,14 @@ body {
   display: none;
 }
 
-/* Orange accent bar between header and content */
+/* Teal accent bar between header and content */
 .header-accent-bar {
   background: var(--sortition-white);
 }
 
 .header-accent-bar__line {
   border: 0;
-  border-top: 4px solid var(--sortition-burnt-orange);
+  border-top: 4px solid var(--brand-teal);
   margin: 0;
 }
 
@@ -123,18 +124,18 @@ body {
 }
 
 .govuk-header__menu-button:hover {
-  color: var(--sortition-burnt-orange);
+  color: var(--brand-teal);
 }
 
-/* Focus styles using saffron yellow */
+/* Focus styles using GOV.UK focus yellow */
 .govuk-skip-link:focus,
 a:focus,
 .govuk-header__link:focus,
 .govuk-footer__link:focus,
 .govuk-link:focus {
-  outline: 3px solid var(--sortition-saffron-yellow);
+  outline: 3px solid var(--focus-yellow);
   outline-offset: 0;
-  background-color: var(--sortition-saffron-yellow);
+  background-color: var(--focus-yellow);
   color: var(--sortition-black);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
@@ -142,7 +143,7 @@ a:focus,
 
 /* Hero section */
 .hero-section {
-  background: var(--sortition-burnt-orange);
+  background: var(--brand-teal);
   margin: 0 calc(-1 * var(--govuk-gutter-half, 15px));
   padding-left: var(--govuk-gutter-half, 15px);
   padding-right: var(--govuk-gutter-half, 15px);
@@ -166,7 +167,7 @@ body {
 
 /* Feature cards */
 .feature-card {
-  border-top: 4px solid var(--sortition-burnt-orange);
+  border-top: 4px solid var(--brand-teal);
   padding-top: 15px;
   margin-bottom: 30px;
 }
@@ -345,9 +346,9 @@ body {
   color: var(--sortition-black);
 }
 
-/* Orange line on left when section is open */
+/* Teal line on left when section is open */
 .side-nav-item:has(.side-nav-details[open]) {
-  border-left: 4px solid var(--sortition-burnt-orange);
+  border-left: 4px solid var(--brand-teal);
   padding-left: 12px;
   margin-left: -16px;
 }
@@ -394,7 +395,7 @@ body {
 /* Pagefind UI overrides to match GOV.UK styling */
 .pagefind-ui {
   --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: var(--sortition-burnt-orange);
+  --pagefind-ui-primary: var(--brand-teal);
   --pagefind-ui-text: var(--sortition-black);
   --pagefind-ui-background: var(--sortition-white);
   --pagefind-ui-border: #0b0c0c;
@@ -427,7 +428,7 @@ body {
 }
 
 .pagefind-ui .pagefind-ui__search-input:focus {
-  outline: 3px solid var(--sortition-saffron-yellow);
+  outline: 3px solid var(--focus-yellow);
   outline-offset: 0;
   box-shadow: inset 0 0 0 2px var(--sortition-black);
 }
@@ -485,12 +486,12 @@ body {
 }
 
 .pagefind-ui .pagefind-ui__search-clear:hover {
-  color: var(--sortition-burnt-orange);
+  color: var(--brand-teal);
 }
 
 .pagefind-ui .pagefind-ui__search-clear:focus {
-  outline: 3px solid var(--sortition-saffron-yellow);
-  background: var(--sortition-saffron-yellow);
+  outline: 3px solid var(--focus-yellow);
+  background: var(--focus-yellow);
 }
 
 /* Floating results dropdown */
@@ -542,8 +543,8 @@ body {
 }
 
 .pagefind-ui .pagefind-ui__result-link:focus {
-  outline: 3px solid var(--sortition-saffron-yellow);
-  background: var(--sortition-saffron-yellow);
+  outline: 3px solid var(--focus-yellow);
+  background: var(--focus-yellow);
   color: var(--sortition-black);
   text-decoration: none;
 }
@@ -595,13 +596,13 @@ body {
   }
 
   .mobile-menu__toggle:hover {
-    color: var(--sortition-burnt-orange);
+    color: var(--brand-teal);
   }
 
   .mobile-menu__toggle:focus-visible {
-    outline: 3px solid var(--sortition-saffron-yellow);
+    outline: 3px solid var(--focus-yellow);
     outline-offset: 0;
-    background-color: var(--sortition-saffron-yellow);
+    background-color: var(--focus-yellow);
   }
 
   .mobile-menu__toggle-icon {
