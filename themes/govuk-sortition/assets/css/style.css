@@ -726,3 +726,46 @@ body {
     scroll-padding-top: 110px;
   }
 }
+
+/* Footnotes: markers read as [1]; notes sit in a small block at the foot of the page */
+.footnote-ref {
+  text-decoration: none;
+}
+
+.footnote-ref::before {
+  content: "[";
+}
+
+.footnote-ref::after {
+  content: "]";
+}
+
+sup:has(> .footnote-ref) {
+  font-size: 0.75em;
+  line-height: 0;
+}
+
+.footnotes {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footnotes hr {
+  border: 0;
+  border-top: 1px solid #b1b4b6;
+  margin: 0 0 20px;
+}
+
+.footnotes ol {
+  padding-left: 20px;
+}
+
+.footnotes li {
+  margin-bottom: 10px;
+}
+
+.footnote-backref {
+  text-decoration: none;
+  margin-left: 4px;
+}
