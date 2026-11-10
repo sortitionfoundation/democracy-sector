@@ -166,10 +166,32 @@ body {
 }
 
 /* Feature cards */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+/* Each card spans two rows of the parent grid (title, description) via
+   subgrid, so descriptions in the same row start at the same height */
 .feature-card {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   border-top: 4px solid var(--brand-teal);
   padding-top: 15px;
   margin-bottom: 30px;
+}
+
+.feature-grid--two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 40.0525em) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
@@ -255,7 +277,7 @@ body {
 }
 
 .side-nav-item > a.govuk-link:visited {
-  color: #4c2c92;
+  color: #1d70b8;
 }
 
 .side-nav-item > a.govuk-link:hover {
@@ -285,7 +307,7 @@ body {
 .side-nav-details {
   margin-bottom: 0;
   border: none;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .side-nav-details:first-child {
@@ -297,8 +319,8 @@ body {
 }
 
 .side-nav-summary {
-  padding: 0;
-  margin-bottom: 5px;
+  padding: 8px 0;
+  margin-bottom: 0;
   cursor: pointer;
   list-style: none;
 }
@@ -326,11 +348,12 @@ body {
   display: none !important;
 }
 
+/* Top-level entries with a subnav look the same as plain top-level links */
 .side-nav-summary .govuk-details__summary-text {
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.3;
-  color: var(--sortition-black);
+  color: #1d70b8;
   text-decoration: none;
 }
 
@@ -343,7 +366,15 @@ body {
 
 .side-nav-summary .govuk-link:hover {
   text-decoration: underline !important;
-  color: var(--sortition-black);
+  color: #003078;
+}
+
+/* Keep GOV.UK's yellow focus highlight for keyboard users only, not after a mouse click */
+.side-nav-summary:focus:not(:focus-visible),
+.side-nav-summary:focus:not(:focus-visible) .govuk-details__summary-text {
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 /* Teal line on left when section is open */
@@ -687,8 +718,10 @@ body {
     padding-right: 15px;
   }
 
-  /* Smooth scroll for anchor links and offset for sticky header */
-  html {
+  /* Smooth scroll for anchor links and offset for sticky header.
+     Selector must out-rank GOV.UK's `.govuk-template:not(:has(...))`
+     rule, which otherwise resets scroll-padding-top to 0 */
+  html.govuk-template:root {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
   }

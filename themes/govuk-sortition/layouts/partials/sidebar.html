@@ -1,3 +1,5 @@
+{{/* ABOUTME: Left-hand navigation: top-level pages and sections in weight order, each with a collapsible subnav */}}
+{{/* ABOUTME: Subnav lists a section's pages or a page's subheadings; collapses into a toggleable menu on narrow screens */}}
 <div class="mobile-menu">
   <button class="mobile-menu__toggle" aria-expanded="false" aria-controls="mobile-menu-content">
     <span class="mobile-menu__toggle-text">Menu</span>
@@ -6,47 +8,74 @@
   <nav class="side-navigation" id="mobile-menu-content">
     <ul class="govuk-list">
       {{- $currentPage := . -}}
-      {{- range .Site.Sections.ByWeight -}}
+      {{- /* Sections and top-level pages share one list, ordered by weight */ -}}
+      {{- $topLevel := sort ((where .Site.RegularPages "Section" "") | append .Site.Sections) "Weight" -}}
+      {{- range $topLevel -}}
         {{ template "menu-node" (dict "node" . "currentPage" $currentPage) }}
-      {{- end -}}
-      {{- range (where .Site.RegularPages "Section" "") -}}
-        <li class="side-nav-item">
-          <a class="govuk-link {{ if eq . $currentPage }}side-nav-item--active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
       {{- end -}}
     </ul>
   </nav>
 </div>
 
+{{- /*
+  Renders one navigation entry. If it has children (a section's pages, or a
+  top-level page's level-2 headings) it becomes a <details> disclosure that is
+  open while you are on that page or inside that section. On the page itself
+  the title is plain text, so clicking it toggles the subnav; elsewhere the
+  title is a link to the page.
+*/ -}}
 {{- define "menu-node" -}}
   {{- $node := .node -}}
   {{- $currentPage := .currentPage -}}
-  {{- $isActive := $currentPage.IsDescendant $node -}}
-  {{- if eq $currentPage $node }}{{ $isActive = true }}{{ end -}}
-  
+  {{- $isCurrent := eq $node $currentPage -}}
+  {{- $isActive := or $isCurrent ($currentPage.IsDescendant $node) -}}
+
+  {{- $headings := slice -}}
+  {{- if not $node.IsSection -}}
+    {{- range $node.Fragments.Headings -}}
+      {{- if eq .Level 2 }}{{ $headings = $headings | append . }}{{ end -}}
+      {{- range .Headings -}}
+        {{- if eq .Level 2 }}{{ $headings = $headings | append . }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $hasChildren := or (and $node.IsSection (or $node.Sections $node.RegularPages)) $headings -}}
+
   <li class="side-nav-item">
-    {{- if or $node.Sections $node.Pages -}}
-      <details class="govuk-details side-nav-details" data-module="govuk-details" {{ if $isActive }}open{{ end }}>
-        <summary class="govuk-details__summary side-nav-summary" tabindex="-1">
+    {{- if $hasChildren -}}
+      <details class="govuk-details side-nav-details" {{ if $isActive }}open{{ end }}>
+        <summary class="govuk-details__summary side-nav-summary" {{ if not $isCurrent }}tabindex="-1"{{ end }}>
           <span class="govuk-details__summary-text">
-            <a class="govuk-link {{ if eq $node $currentPage }}side-nav-item--active{{ end }}" href="{{ $node.RelPermalink }}">{{ $node.Title }}</a>
+            {{- if $isCurrent -}}
+              <span class="side-nav-item--active">{{ $node.Title }}</span>
+            {{- else -}}
+              <a class="govuk-link" href="{{ $node.RelPermalink }}">{{ $node.Title }}</a>
+            {{- end -}}
           </span>
         </summary>
         <div class="govuk-details__text side-nav-content">
           <ul class="govuk-list">
-            {{- range $node.Sections.ByWeight -}}
-              {{ template "menu-node" (dict "node" . "currentPage" $currentPage) }}
-            {{- end -}}
-            {{- range $node.RegularPages.ByWeight -}}
-              <li class="side-nav-item">
-                <a class="govuk-link {{ if eq . $currentPage }}side-nav-item--active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
-              </li>
+            {{- if $node.IsSection -}}
+              {{- range $node.Sections.ByWeight -}}
+                {{ template "menu-node" (dict "node" . "currentPage" $currentPage) }}
+              {{- end -}}
+              {{- range $node.RegularPages.ByWeight -}}
+                <li class="side-nav-item">
+                  <a class="govuk-link {{ if eq . $currentPage }}side-nav-item--active{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </li>
+              {{- end -}}
+            {{- else -}}
+              {{- range $headings -}}
+                <li class="side-nav-item">
+                  <a class="govuk-link" href="{{ $node.RelPermalink }}#{{ .ID }}">{{ .Title | safeHTML }}</a>
+                </li>
+              {{- end -}}
             {{- end -}}
           </ul>
         </div>
       </details>
     {{- else -}}
-      <a class="govuk-link {{ if eq $node $currentPage }}side-nav-item--active{{ end }}" href="{{ $node.RelPermalink }}">{{ $node.Title }}</a>
+      <a class="govuk-link {{ if $isCurrent }}side-nav-item--active{{ end }}" href="{{ $node.RelPermalink }}">{{ $node.Title }}</a>
     {{- end -}}
   </li>
 {{- end -}}

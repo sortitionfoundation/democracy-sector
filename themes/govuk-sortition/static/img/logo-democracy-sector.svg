@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ABOUTME: Placeholder logo for the UK Deliberative Democracy Sector site -->
-<!-- ABOUTME: A circle-of-people deliberation mark beside the words "UK Deliberative Democracy Sector" in the site teal -->
+<!-- ABOUTME: A circle-of-people deliberation mark beside the words "UK Deliberative Democracy Sector" in a single uniform style -->
 <svg xmlns="http://www.w3.org/2000/svg" width="330" height="64" viewBox="0 0 330 64" role="img" aria-labelledby="title">
   <title id="title">UK Deliberative Democracy Sector</title>
   <!-- Deliberation mark: people seated in a circle around a table -->
@@ -13,6 +13,6 @@
   <circle cx="15.5" cy="41.5" r="5.5" fill="#ffffff"/>
   <circle cx="15.5" cy="22.5" r="5.5" fill="#ffffff"/>
   <!-- Wordmark -->
-  <text x="76" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#473d3d">UK DELIBERATIVE</text>
-  <text x="75" y="54" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b0c0c">Democracy <tspan fill="#00746b">Sector</tspan></text>
+  <text x="76" y="29" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0b0c0c">UK Deliberative</text>
+  <text x="76" y="55" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0b0c0c">Democracy Sector</text>
 </svg>

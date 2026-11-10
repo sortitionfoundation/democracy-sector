@@ -30,13 +30,18 @@ collections:
         name: description
         widget: string
         required: false
+      - label: Weight
+        name: weight
+        widget: number
+        value_type: int
+        required: false
       - label: Body
         name: body
         widget: markdown
-  - name: standards
-    label: Standard Pages
-    label_singular: Standards Page
-    folder: content/standards
+  - name: framework-pages
+    label: Framework of Standards Pages
+    label_singular: Framework of Standards Page
+    folder: content/framework
     create: true
     extension: md
     format: yaml-frontmatter

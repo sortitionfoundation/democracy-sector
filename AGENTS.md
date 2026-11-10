@@ -53,7 +53,7 @@ Sveltia CMS does not natively support nested folders, so each folder under `cont
 The theme at `themes/govuk-sortition/` is lightweight and custom-built:
 
 - Uses GOV.UK Frontend CSS/JS from CDN (v5.11.1)
-- Custom CSS in `static/css/style.css` with Sortition Foundation brand colours
+- Custom CSS in `themes/govuk-sortition/assets/css/style.css` with brand colours. It is fingerprinted by Hugo so browsers pick up changes without a hard refresh
 - Layouts: `baseof.html` (shell), `single.html` (content pages), `list.html` (sections), `index.html` (home with hero + feature cards)
 - Partials: `header.html` and `footer.html`
 - No custom shortcodes

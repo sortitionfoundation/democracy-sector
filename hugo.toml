@@ -1,13 +1,13 @@
-# ABOUTME: Hugo configuration for the UK Deliberative Democracy Sector documentation site
+# ABOUTME: Hugo configuration for the UK Deliberative Standards site
 # ABOUTME: Uses a custom GOV.UK-styled theme with Sortition Foundation branding
 
 baseURL = '/'
 languageCode = 'en-gb'
-title = 'UK Deliberative Democracy Sector'
+title = 'UK Deliberative Standards'
 theme = 'govuk-sortition'
 
 [params]
-description = 'Documentation for the UK Deliberative Democracy Sector'
+description = 'Standards for deliberative engagement for decision-making, from the UK deliberative democracy sector'
 supportEmail = 'info@sortitionfoundation.org'
 githubURL = 'https://github.com/sortitionfoundation/democracy-sector'
 sortitionFoundationURL = 'https://www.sortitionfoundation.org'
@@ -23,14 +23,18 @@ name = 'Home'
 url = '/'
 weight = 1
 [[menu.main]]
-name = 'Help'
-url = '/help/'
+name = 'What are the deliberative standards?'
+url = '/what-are-the-deliberative-standards/'
 weight = 2
 [[menu.main]]
-name = 'CSV Format'
-url = '/csv-format/'
+name = 'Four best practice principles'
+url = '/principles/'
 weight = 3
 [[menu.main]]
-name = 'Data Agreement'
-url = '/data-agreement/'
+name = 'Framework of Standards'
+url = '/framework/'
 weight = 4
+[[menu.main]]
+name = 'Contributors'
+url = '/contributors/'
+weight = 5

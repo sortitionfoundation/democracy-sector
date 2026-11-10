@@ -1,34 +1,21 @@
 {{/* ABOUTME: Home page template with hero section and feature cards */}}
-{{/* ABOUTME: Uses a teal hero and GOV.UK grid for features */}}
+{{/* ABOUTME: Uses a teal hero and a CSS subgrid so tile descriptions align across each row */}}
 {{ define "content" }}
 <div class="hero-section govuk-!-padding-top-8 govuk-!-padding-bottom-8">
-  <h1 class="govuk-heading-xl hero-section__title">UK Deliberative Democracy Sector</h1>
-  <p class="govuk-body-l hero-section__description">
-    Here comes the good stuff.
-  </p>
+  <h1 class="govuk-heading-xl hero-section__title">UK Deliberative Standards</h1>
 </div>
 
-<div class="govuk-!-margin-top-6">
+<div class="feature-grid feature-grid--two govuk-!-margin-top-6">
   {{- $topLevelPages := where .Site.RegularPages "Section" "" }}
   {{- $sections := .Site.Sections }}
   {{- $allPages := (sort ($topLevelPages | append $sections) "Weight") }}
-  {{- range $index, $element := $allPages }}
-    {{- if (modBool $index 3) }}
-      <div class="govuk-grid-row">
-    {{- end }}
-    <div class="govuk-grid-column-one-third">
-      <div class="feature-card">
-        <h2 class="govuk-heading-m">
-          <a class="govuk-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-        {{- with .Description }}
-          <p class="govuk-body">{{ . }}</p>
-        {{- end }}
-      </div>
+  {{- range $allPages }}
+    <div class="feature-card">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      <p class="govuk-body">{{ .Description }}</p>
     </div>
-    {{- if or (modBool (add $index 1) 3) (eq (add $index 1) (len $allPages)) }}
-      </div>
-    {{- end }}
   {{- end }}
 </div>
 {{ end }}
