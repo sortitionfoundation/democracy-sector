@@ -769,3 +769,31 @@ sup:has(> .footnote-ref) {
   text-decoration: none;
   margin-left: 4px;
 }
+
+/* Markdown tables and images: tables styled like GOV.UK tables, images kept within the column */
+.govuk-body table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5em;
+  font-size: 1rem;
+}
+
+.govuk-body th,
+.govuk-body td {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #b1b4b6;
+  text-align: left;
+  vertical-align: top;
+}
+
+.govuk-body th {
+  font-weight: 700;
+}
+
+.govuk-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0 1.5em;
+}

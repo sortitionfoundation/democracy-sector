@@ -1,4 +1,4 @@
-{{/* ABOUTME: Site footer with a link to GitHub */}}
+{{/* ABOUTME: Site footer with links to GitHub, the feedback form, and the GPL v3 licence */}}
 {{/* ABOUTME: Matches the GOV.UK footer pattern used in the backend application */}}
 <footer class="govuk-footer" role="contentinfo">
     <div class="govuk-width-container">
@@ -11,7 +11,18 @@
                            href="{{ .Site.Params.githubURL }}"
                            target="_blank">GitHub</a>
                     </li>
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link"
+                           href="{{ .Site.Params.feedbackFormURL }}"
+                           target="_blank">Give feedback</a>
+                    </li>
                 </ul>
+                <p class="govuk-body-s govuk-!-margin-top-3 govuk-!-margin-bottom-0">
+                    Open source under the
+                    <a class="govuk-footer__link"
+                       href="{{ .Site.Params.githubURL }}/blob/main/LICENSE"
+                       target="_blank">GNU General Public License v3.0</a>
+                </p>
             </div>
         </div>
     </div>

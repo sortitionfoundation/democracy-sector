@@ -5,7 +5,7 @@
   <h1 class="govuk-heading-xl hero-section__title">UK Deliberative Standards</h1>
 </div>
 
-<div class="feature-grid feature-grid--two govuk-!-margin-top-6">
+<div class="feature-grid govuk-!-margin-top-6">
   {{- $topLevelPages := where .Site.RegularPages "Section" "" }}
   {{- $sections := .Site.Sections }}
   {{- $allPages := (sort ($topLevelPages | append $sections) "Weight") }}

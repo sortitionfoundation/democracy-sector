@@ -1,10 +1,10 @@
 ---
 title: "4. Recruitment"
-description: "So the process includes the right people to deliberate on the question — whether that means reflecting the diversity of the wider population, or bringing together people with direct experience of the issue."
+description: "So the process includes the right people to deliberate on the question - whether that means reflecting the diversity of the wider population, or bringing together people with direct experience of the issue."
 weight: 4
 ---
 
-_So the process includes the right people to deliberate on the question — whether that means reflecting the diversity of the wider population, or bringing together people with direct experience of the issue._
+_So the process includes the right people to deliberate on the question - whether that means reflecting the diversity of the wider population, or bringing together people with direct experience of the issue._
 
 Links to Principles: [Inclusion-focused](/principles/#inclusion-focused)
 

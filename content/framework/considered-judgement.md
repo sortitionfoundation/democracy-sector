@@ -1,10 +1,10 @@
 ---
 title: "9. Considered Judgement"
-description: "So the output reflects genuine deliberation and collective conclusions that impact decision making."
+description: "So the output reflects genuine deliberation and collective conclusions that influence decision making."
 weight: 9
 ---
 
-_So the output reflects genuine deliberation and collective conclusions that impact decision making._
+_So the output reflects genuine deliberation and collective conclusions that influence decision making._
 
 Links to Principles: [Well-designed Deliberation](/principles/#well-designed-deliberation)
 

@@ -11,6 +11,7 @@ description = 'Standards for deliberative engagement for decision-making, from t
 supportEmail = 'info@sortitionfoundation.org'
 githubURL = 'https://github.com/sortitionfoundation/democracy-sector'
 sortitionFoundationURL = 'https://www.sortitionfoundation.org'
+feedbackFormURL = 'https://forms.gle/PKTxsqgnrVRi9dYK7'
 
 [markup]
 [markup.goldmark]
@@ -23,18 +24,26 @@ name = 'Home'
 url = '/'
 weight = 1
 [[menu.main]]
-name = 'What are the deliberative standards?'
-url = '/what-are-the-deliberative-standards/'
+name = '11 Deliberative Standards'
+url = '/framework/'
 weight = 2
 [[menu.main]]
-name = 'Four best practice principles'
+name = 'Four good practice principles'
 url = '/principles/'
 weight = 3
 [[menu.main]]
-name = 'Framework of Standards'
-url = '/framework/'
+name = 'What are the deliberative standards?'
+url = '/what-are-the-deliberative-standards/'
 weight = 4
 [[menu.main]]
-name = 'Contributors'
-url = '/contributors/'
+name = 'What is deliberation?'
+url = '/what-is-deliberation/'
 weight = 5
+[[menu.main]]
+name = 'How were the standards developed?'
+url = '/how-were-the-standards-developed/'
+weight = 6
+[[menu.main]]
+name = 'Contributors and feedback'
+url = '/contributors/'
+weight = 7

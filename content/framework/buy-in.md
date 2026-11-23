@@ -1,10 +1,10 @@
 ---
 title: "3. Buy-in"
-description: "To ensure recommendations are acted on and embedded into decision making."
+description: "So recommendations are acted on and embedded in decision making."
 weight: 3
 ---
 
-_To ensure recommendations are acted on and embedded into decision making._
+_So recommendations are acted on and embedded in decision making._
 
 Links to Principles: [A Clear Mandate](/principles/#a-clear-mandate)
 

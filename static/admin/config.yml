@@ -39,8 +39,8 @@ collections:
         name: body
         widget: markdown
   - name: framework-pages
-    label: Framework of Standards Pages
-    label_singular: Framework of Standards Page
+    label: 11 Deliberative Standards Pages
+    label_singular: 11 Deliberative Standards Page
     folder: content/framework
     create: true
     extension: md

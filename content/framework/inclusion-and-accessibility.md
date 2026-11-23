@@ -1,10 +1,10 @@
 ---
 title: "5. Inclusion & Accessibility"
-description: "So participation is genuinely accessible to as many people as possible, with attention given to addressing not replicating power imbalances."
+description: "So participation is genuinely accessible to as many people as possible, with attention given to addressing, rather than replicating, power imbalances."
 weight: 5
 ---
 
-_So participation is genuinely accessible to as many people as possible, with attention given to addressing not replicating power imbalances._
+_So participation is genuinely accessible to as many people as possible, with attention given to addressing, rather than replicating, power imbalances._
 
 Links to Principles: [Inclusion-focused](/principles/#inclusion-focused)
 

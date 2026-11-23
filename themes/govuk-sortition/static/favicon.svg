@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ABOUTME: Favicon for the UK Deliberative Democracy Sector site -->
+<!-- ABOUTME: The circle-of-people deliberation mark from the header logo, without the wordmark -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="2 2 60 60">
+  <rect x="2" y="2" width="60" height="60" rx="6" fill="#00746b"/>
+  <circle cx="32" cy="32" r="8" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="32.0" cy="13.0" r="5.5" fill="#ffffff"/>
+  <circle cx="48.5" cy="22.5" r="5.5" fill="#ffffff"/>
+  <circle cx="48.5" cy="41.5" r="5.5" fill="#ffffff"/>
+  <circle cx="32.0" cy="51.0" r="5.5" fill="#ffffff"/>
+  <circle cx="15.5" cy="41.5" r="5.5" fill="#ffffff"/>
+  <circle cx="15.5" cy="22.5" r="5.5" fill="#ffffff"/>
+</svg>
