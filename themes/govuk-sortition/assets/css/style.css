@@ -797,3 +797,66 @@ sup:has(> .footnote-ref) {
   height: auto;
   margin: 1em 0 1.5em;
 }
+
+/* Logo grid for contributing organisations: a "brick wall" of three logos
+   over four. An 8-column grid where each logo spans two columns; the top row
+   is offset by one column so its logos sit over the gaps below */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 15px;
+  max-width: 640px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.logo-grid__item {
+  grid-column: span 2;
+}
+
+.logo-grid__item:nth-child(1) { grid-column: 2 / span 2; }
+.logo-grid__item:nth-child(2) { grid-column: 4 / span 2; }
+.logo-grid__item:nth-child(3) { grid-column: 6 / span 2; }
+.logo-grid__item:nth-child(4) { grid-column: 1 / span 2; }
+.logo-grid__item:nth-child(5) { grid-column: 3 / span 2; }
+.logo-grid__item:nth-child(6) { grid-column: 5 / span 2; }
+.logo-grid__item:nth-child(7) { grid-column: 7 / span 2; }
+
+/* On narrow viewports four across is too cramped, so fall back to two
+   per row, with any odd one out centred */
+@media (max-width: 40.0525em) {
+  .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo-grid__item {
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+
+.logo-grid__item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  padding: 10px;
+  border: 1px solid #b1b4b6;
+  background: var(--sortition-white);
+}
+
+.logo-grid__item a:hover {
+  border-color: var(--brand-teal);
+}
+
+.logo-grid__item img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+}
